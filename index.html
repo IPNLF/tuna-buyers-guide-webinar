@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Tuna Buyers Guide | IPNLF webinar</title>
+<meta name="description" content="Join IPNLF on 10 December 2026 for a webinar launching The Tuna Buyers Guide: how to source tuna with less risk to people, the ocean and your business.">
+<link rel="icon" href="img/ipnlf-logo.png">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: follows ipnlf.org. White header and sections, IPNLF green bands with
+   white text, gold buttons. Deliberately light only. */
+:root {
+  --navy: #103649;
+  --navy-soft: #4B6472;
+  --green: #2F9F8A;
+  --green-deep: #1F7A69;
+  --gold: #F6AE2D;
+  --grey: #C8D1D9;
+  --soft: #F2F6F7;
+  --white: #FFFFFF;
+
+  --font-display: "Bebas Neue", "Oswald", "Arial Narrow", sans-serif;
+  --font-text: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --wrap: 1100px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+body { background: var(--white); color: var(--navy); font-family: var(--font-text); font-size: 1rem; line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.01em; line-height: 1; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--green-deep); }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.section { padding-block: clamp(3rem, 7vw, 5rem); }
+.section h2 { font-size: clamp(2.4rem, 5vw, 3.2rem); }
+.head { display: grid; gap: 0.5rem; margin-bottom: 2.25rem; max-width: 40rem; }
+.head p { font-size: 1.1rem; color: var(--navy-soft); }
+.soft { background: var(--soft); }
+.green { background: var(--green); color: var(--white); }
+.green .head p { color: rgba(255,255,255,0.92); }
+.kicker { font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.1em; color: var(--green-deep); }
+
+.btn { display: inline-block; padding: 0.85rem 1.5rem; border-radius: 4px; background: var(--gold); color: var(--navy); font-weight: 700; text-decoration: none; }
+.btn:hover { background: #FFBF49; }
+.btn.line { background: transparent; color: var(--navy); box-shadow: inset 0 0 0 2px var(--grey); }
+.btn.line:hover { box-shadow: inset 0 0 0 2px var(--green); }
+.flag { display: inline-block; font-size: 0.75rem; font-weight: 600; color: #8A4B0C; background: #FDF0D8; border: 1px dashed #E88C33; border-radius: 4px; padding: 0.1rem 0.5rem; }
+
+/* Header */
+.bar { background: var(--white); border-bottom: 1px solid var(--grey); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--white); }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.6rem; }
+.bar img { width: 130px; height: auto; display: block; }
+.bar .btn { padding: 0.5rem 1rem; font-size: 0.9rem; }
+
+/* Hero: text beside the image slot */
+/* Hero: tin-lid photo on the right at near full strength, fading into the
+   white page behind the text on the left. */
+.hero { position: relative; overflow: hidden; background: var(--white); border-bottom: 1px solid var(--grey); }
+.hero::after { content: ""; position: absolute; top: 0; bottom: 0; right: 0; width: 58%; z-index: 0; background: url("img/tins.jpg") 50% 50% / cover no-repeat; }
+.hero::before { content: ""; position: absolute; top: 0; bottom: 0; right: 0; width: calc(58% + 2px); z-index: 1; background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 6%, rgba(255,255,255,0.7) 26%, rgba(255,255,255,0.1) 55%, rgba(255,255,255,0) 100%); }
+.hero .wrap { position: relative; z-index: 2; display: grid; padding-block: clamp(3.5rem, 9vw, 6.5rem); }
+.hero .btn.line { background: rgba(255,255,255,0.9); }
+.hero-text { display: grid; gap: 1.1rem; justify-items: start; }
+.hero h1 { font-size: clamp(3rem, 7.5vw, 5.25rem); line-height: 0.92; }
+.hero .lede { font-size: clamp(1.1rem, 2vw, 1.25rem); color: var(--navy-soft); max-width: 30rem; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.3rem; }
+.when { display: flex; flex-wrap: wrap; gap: 0.75rem 2.25rem; margin: 0.4rem 0 0; font-weight: 600; }
+.when div { display: grid; gap: 0.1rem; }
+.when dt { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.08em; font-size: 1.05rem; color: var(--green-deep); }
+.when dd { margin: 0; }
+.when .times { display: grid; grid-template-columns: repeat(4, auto); justify-content: start; column-gap: 0.45rem; font-variant-numeric: tabular-nums; }
+.when .times span:nth-child(4n+1) { text-align: right; }
+.when .times span:nth-child(4n) { padding-left: 0.3rem; }
+.hero-photo { width: 100%; height: auto; max-width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 40% 60%; border-radius: 4px; display: block; }
+
+/* What you'll get */
+.benefits { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 3rem; }
+.benefits li { display: grid; grid-template-columns: 72px minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.1rem; row-gap: 0.3rem; align-items: start; }
+.benefits img { width: 72px; height: 72px; display: block; grid-row: span 2; }
+.benefits h3 { align-self: end; padding-top: 0.6rem; }
+.benefits h3 { font-family: var(--font-text); font-weight: 700; font-size: 1.05rem; line-height: 1.3; letter-spacing: 0; }
+.benefits p { color: var(--navy-soft); font-size: 0.95rem; }
+.green .benefits p { color: rgba(255,255,255,0.92); }
+
+/* Principles tile */
+.tile { background: #E3E9ED; border-radius: 6px; padding: clamp(1.5rem, 4vw, 2.75rem); }
+.principles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.75rem 1rem; }
+.principles li { display: grid; justify-items: center; align-content: start; text-align: center; gap: 0.6rem; font-weight: 600; font-size: 0.92rem; line-height: 1.3; }
+.principles img { width: 72px; height: 72px; display: block; }
+
+/* Speakers */
+.speakers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 340px)); justify-content: center; gap: 1.5rem; }
+.speaker { background: var(--white); color: var(--navy); border-radius: 4px; padding: 1.5rem; display: grid; gap: 0.75rem; justify-items: center; align-content: start; text-align: center; }
+#speakers .head { margin-inline: auto; justify-items: center; text-align: center; }
+.speaker .photo { width: 120px; height: 120px; border-radius: 50%; background: var(--soft); border: 2px dashed var(--grey); object-fit: cover; display: block; }
+.speaker img.photo { border: 0; }
+.speaker .role { font-family: var(--font-display); letter-spacing: 0.03em; font-size: 1.9rem; line-height: 1; color: var(--green-deep); }
+.speaker h3 { font-family: var(--font-text); font-weight: 700; font-size: 1.1rem; line-height: 1.3; letter-spacing: 0; }
+#speaker-list { display: grid; gap: 2.25rem; }
+.group-label { font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.1em; color: var(--white); margin: 0 0 0.75rem; text-align: center; }
+.speaker p { color: var(--navy-soft); font-size: 0.92rem; }
+.speaker.tba h3 { color: var(--navy-soft); }
+
+/* Everyone is welcome */
+.welcome { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 1rem 3rem; align-items: center; border-left: 5px solid var(--green); padding-left: clamp(1.25rem, 3vw, 2rem); }
+.welcome p { font-size: clamp(1.05rem, 1.8vw, 1.2rem); color: var(--navy-soft); text-wrap: pretty; }
+.welcome-text { display: grid; gap: 0.9rem; }
+
+/* Register */
+.register { display: grid; justify-items: center; text-align: center; gap: 1rem; }
+.register .btn { font-size: 1.1rem; padding: 1rem 2rem; }
+.register p { color: rgba(255,255,255,0.92); }
+.register .when { justify-content: center; align-items: center; text-align: left; color: var(--white); margin: 0.25rem 0 0.75rem; gap: 1rem 3rem; }
+
+
+/* Footer */
+.foot { background: var(--soft); border-top: 1px solid var(--grey); }
+.foot .wrap { padding-block: 2.25rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.25rem 2rem; font-size: 0.82rem; color: var(--navy-soft); }
+.foot img { width: 140px; height: auto; display: block; }
+
+@media (max-width: 900px) {
+  .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .hero .wrap, .welcome, .benefits { grid-template-columns: minmax(0, 1fr); }
+  .hero::after, .hero::before { width: 100%; }
+  .hero::before { background: rgba(255,255,255,0.86); }
+}
+@media (max-width: 480px) {
+  .principles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <img src="img/ipnlf-logo.png" alt="IPNLF, for one-by-one fishers" width="511" height="166">
+    <a class="btn" href="https://us02web.zoom.us/webinar/register/WN_-w3y5m0WTQel0J52jZuwwg" target="_blank" rel="noopener">Register</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="kicker">IPNLF webinar</p>
+      <h1>The Tuna<br>Buyers Guide</h1>
+      <p class="lede">How to source tuna with less risk to people, the ocean and your business.</p>
+      <dl class="when">
+        <div><dt>Date</dt><dd>10 December 2026</dd></div>
+        <div><dt>Time</dt><dd class="times"><span>9am</span><span>–</span><span>10am</span><span>EST</span><span>2pm</span><span>–</span><span>3pm</span><span>GMT</span><span>3pm</span><span>–</span><span>4pm</span><span>CET</span><span>10pm</span><span>–</span><span>11pm</span><span>WITA</span></dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn" href="https://us02web.zoom.us/webinar/register/WN_-w3y5m0WTQel0J52jZuwwg" target="_blank" rel="noopener">Register your place</a>
+        <a class="btn line" href="#speakers">See the speakers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section green">
+    <div class="wrap">
+      <div class="head">
+        <h2>A comprehensive guide to buying tuna</h2>
+        <p>The Tuna Buyers Guide aims to support buyers in making informed, socially responsible, and environmentally sound sourcing decisions.</p>
+      </div>
+      <ul class="benefits">
+        <li><img src="img/p10.png" alt=""><h3>De-risk your supply chain</h3><p>Know where the biggest risks lie when you buy tuna.</p></li>
+        <li><img src="img/p01.png" alt=""><h3>Reduce human rights risks</h3><p>Protect the people who catch your tuna, and your brand.</p></li>
+        <li><img src="img/p03.png" alt=""><h3>Reduce environmental risk</h3><p>Back fisheries that support long-term ocean biodiversity.</p></li>
+        <li><img src="img/expert.svg" alt=""><h3>Expert analysis</h3><p>Expert views from representatives offering perspectives from both policy and markets angles.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="tile">
+        <div class="head">
+          <p class="kicker">From the guide</p>
+          <h2>10 guiding principles</h2>
+          <p>The 10 Guiding Principles of the Tuna Buyers Guide provide a good framework for your business to integrate environmental stewardship with social responsibility.</p>
+        </div>
+        <ul class="principles">
+          <li><img src="img/p01.png" alt="">Fair labour</li>
+          <li><img src="img/p02.png" alt="">Worker voice</li>
+          <li><img src="img/p03.png" alt="">Healthy ecosystems</li>
+          <li><img src="img/p04.png" alt="">Limit bycatch</li>
+          <li><img src="img/p05.png" alt="">Fisheries management</li>
+          <li><img src="img/p06.png" alt="">Community-centred</li>
+          <li><img src="img/p07.png" alt="">No harmful subsidies</li>
+          <li><img src="img/p08.png" alt="">Nature-positive</li>
+          <li><img src="img/p09.png" alt="">End ghost gear</li>
+          <li><img src="img/p10.png" alt="">Eliminate IUU fishing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section green" id="speakers">
+    <div class="wrap">
+      <div class="head">
+        <h2>Speakers</h2>
+      </div>
+      <div id="speaker-list"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="welcome">
+        <h2>Everyone is welcome</h2>
+        <div class="welcome-text">
+          <p>The webinar is designed primarily for seafood buyers and procurement professionals, with broader relevance for retailers, sourcing directors, distributors, supply chain directors, importers, heads of quality assurance, and sustainability and ESG leads.</p>
+          <p>Whether you're an IPNLF member or simply interested in where your tuna comes from, you're invited to join us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section green" id="register">
+    <div class="wrap register">
+      <h2>Register your place</h2>
+      <dl class="when">
+        <div><dd>10 December 2026</dd></div>
+        <div><dd class="times"><span>9am</span><span>–</span><span>10am</span><span>EST</span><span>2pm</span><span>–</span><span>3pm</span><span>GMT</span><span>3pm</span><span>–</span><span>4pm</span><span>CET</span><span>10pm</span><span>–</span><span>11pm</span><span>WITA</span></dd></div>
+      </dl>
+      <a class="btn" id="zoom-link" href="https://us02web.zoom.us/webinar/register/WN_-w3y5m0WTQel0J52jZuwwg" target="_blank" rel="noopener">Register on Zoom</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="img/ipnlf-logo.png" alt="IPNLF" width="511" height="166" loading="lazy">
+    <p>International Pole and Line Foundation · Charity no. 1145586</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // ---- Edit this setting as speakers change ----
+
+  // Speakers, in the order they should appear. Add one entry per confirmed
+  // speaker: name, role (e.g. "IPNLF" or "Guest speaker"), title and an
+  // optional photo path such as "img/speaker-jane.jpg". Entries with no name
+  // show as "To be confirmed".
+  var SPEAKERS = [
+    { name: "Shannon Hardisty", role: "IPNLF", title: "Social Responsibilities & Markets Consultant", photo: "img/speaker-shannon-hardisty.jpg", moderator: true },
+    { name: "Jess Rattle", role: "Blue Marine Foundation", title: "Head of Investigations", photo: "img/speaker-jess-rattle.jpg" },
+    { name: "Sarah Eames", role: "World Wise Foods", title: "Chief Operating Officer", photo: "img/speaker-sarah-eames.jpg" },
+    { name: "", role: "Speaker", title: "" }
+  ];
+
+  // ---- No need to edit below ----
+  var list = document.getElementById("speaker-list");
+  function group(label, people, extra) {
+    if (!people.length) return null;
+    var wrap = document.createElement("div");
+    var h = document.createElement("p");
+    h.className = "group-label";
+    h.textContent = label;
+    var grid = document.createElement("div");
+    grid.className = "speakers" + (extra ? " " + extra : "");
+    wrap.appendChild(h);
+    wrap.appendChild(grid);
+    list.appendChild(wrap);
+    return grid;
+  }
+  var mods = SPEAKERS.filter(function (s) { return s.moderator; });
+  var talks = SPEAKERS.filter(function (s) { return !s.moderator; });
+  var modGrid = group("Moderator", mods, "mod");
+  var talkGrid = group(mods.length ? "Confirmed speakers" : "", talks, "");
+  SPEAKERS.forEach(function (s) {
+    var target = s.moderator ? modGrid : talkGrid;
+    var card = document.createElement("article");
+    card.className = "speaker" + (s.name ? "" : " tba");
+    var photo = s.photo
+      ? '<img class="photo" src="' + s.photo + '" alt="">'
+      : '<span class="photo" aria-hidden="true"></span>';
+    card.innerHTML = photo +
+      '<span class="role"></span><h3></h3>' + (s.title ? "<p></p>" : "");
+    card.querySelector(".role").textContent = s.role;
+    card.querySelector("h3").textContent = s.name || "To be confirmed";
+    if (s.title) card.querySelector("p").textContent = s.title;
+    target.appendChild(card);
+  });
+
+})();
+</script>
+
+</body>
+</html>

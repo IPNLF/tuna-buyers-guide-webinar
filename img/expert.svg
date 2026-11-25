@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Matches the Tuna Buyers Guide principle icons: radius-76 white disc with a 2px navy ring, two blues -->
+  <circle cx="100" cy="100" r="76" fill="#FFFFFF" stroke="#003B51" stroke-width="2"/>
+  <g stroke="#003B51" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 102) scale(0.66) translate(-103 -103)">
+    <path d="M84 116 L72 146 M84 116 L96 146" fill="none"/>
+    <rect x="34" y="50" width="100" height="66" rx="5" fill="#C7EBEF"/>
+    <rect x="48" y="88" width="16" height="16" fill="#5CA1B9"/>
+    <rect x="72" y="76" width="16" height="28" fill="#5CA1B9"/>
+    <rect x="96" y="62" width="16" height="42" fill="#5CA1B9"/>
+    <path d="M128 156 Q128 116 150 116 Q172 116 172 156 Z" fill="#5CA1B9"/>
+    <circle cx="150" cy="96" r="13" fill="#C7EBEF"/>
+    <path d="M136 128 L120 104" fill="none"/>
+  </g>
+</svg>
